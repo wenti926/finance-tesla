@@ -13,7 +13,7 @@ var trace2 = {
   x: ['Q1-2019', 'Q2-2019', 'Q3-2019', 'Q4-2019', 'Q1-2020', 'Q2-2020', 'Q3-2020', 'Q4-2020'],
   y: [2198, 4955, 5338, 6268, 8080, 8615, 14531, 19384],
   type: 'bar',
-  name: 'Cash and cash flow',
+  name: 'Cash and cash equivalents',
   marker: {
     color: 'rgb(49,130,189)',
     opacity: 1
@@ -25,7 +25,7 @@ var trace2 = {
 var data = [trace1, trace2];
 
 var layout = {
-  title: 'Cash Flow VS Cash and Cash Flow',
+  title: 'Cash Flow VS Cash and Cash Equivalents',
   xaxis: {
     tickangle: -45
   },

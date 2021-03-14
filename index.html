@@ -14,6 +14,12 @@
   <!-- bulma and font awesome -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" crossorigin="anonymous">
+
+  <style>
+    #myDiv3>.plotly>.svg-container {
+      margin: auto
+    }
+  </style>
 </head>
 
 <!-- body -->
@@ -26,12 +32,8 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Project Data Visualization Assignment
+          Group Project Data Visualization Assignment
         </h1>
-        <h2 class="subtitle">
-          wenting ZHU
-
-        </h2>
       </div>
     </div>
 
@@ -75,48 +77,116 @@
   <section class="section">
     <div class="container content">
       <!-- modify if necessary (move visualizations in separate pages) -->
-      <h2 id="viz1">Visualization 1</h2>
-
+      <h2 id="viz1">Financial report visualization</h2>
+      <div id="myDiv5" class="container content"></div>
+      <div class="alert alert-primary" role="alert">
+        <p>
+          Tesla has six factories around the world:
+        </p>
+        <ul>
+          <li>
+            The Tesla Factory is an automobile manufacturing plant in Fremont, California, operated by Tesla, Inc.
+          </li>
+          <li>
+            Tesla Giga Nevada (or Gigafactory 1) is a lithium-ion battery and electric vehicle subassembly factory near
+            Reno, Nevada.
+          </li>
+          <li>
+            Tesla Giga New York (or Gigafactory 2) is a photovoltaic (PV) cell factory leased by Tesla subsidiary
+            SolarCity in Buffalo, New York.
+          </li>
+          <li>
+            Tesla Giga Shanghai (Chinese: 特斯拉上海超级工厂, or Gigafactory 3) is a factory in Shanghai, China operated by
+            Tesla, Inc.
+          </li>
+          <li>
+            Tesla Gigafactory Berlin-Brandenburg (also known as Gigafactory Berlin, Gigafactory 4 or Gigafactory Europe)
+            is a European manufacturing plant for Tesla, Inc.
+          </li>
+          <li>
+            Tesla, Inc. has several factory buildings in the industrial zone of Vossenberg, Tilburg, in the Netherlands.
+          </li>
+        </ul>
+      </div>
+      <div id="myDiv4" class="container content"></div>
+      <div class="alert alert-primary" role="alert">
+        Stock is up an incredible 659% in 2020, making it one of most valuable companies in the world with a $630
+        billion
+        valuation. Tesla stock is up more than 4000% since its debut 10 years age. The company raised around $226
+        million in its IPO, with shares surging that day by around 41% to close at $23.89, meaning Tesla’s stock has
+        risen by 4,125% since the close of its first days as a public company.
+      </div>
+      <div id="sankey" class="container content"></div>
+      <div class="alert alert-primary" role="alert">
+        The previous graph shows Teslas's different revenue sources and how they generate thier gross profit
+        <p>
+          But it's important to note that the generated gorss profit will after be used to pay operating expenses
+          (research and development, administrative, etc) before getting the net income (before taxes)
+        </p>
+      </div>
       <!-- how to insert a static image <img src="XOM.png">-->
       <div id="myDiv" class="container content">
         <!-- Dynamic
           visualization goes here -->
         <div class="alert alert-primary" role="alert">
-          Graph interpretation:
+          Tesla is planning to grow thier manufacturing capacity as quickly as possible. Over a multi-year horizon, they
+          expect to achieve
+          50% average annual growth in vehicle deliveries. In some years we may grow faster, which they expect to be the
+          case in 2021.
+          The rate of growth will depend on thier equipment capacity, operational efficiency and capacity and stability
+          of
+          the supply chain.
         </div>
         <div id="myDiv1" class="container content"></div>
         <div class="alert alert-primary" role="alert">
-          Graph interpretation:
+          Total revenue grew 46% YoY in Q4. This was primarily achieved through substantial growth in vehicle deliveries
+          as well as growth in other
+          parts of the business. At the same time, vehicle average selling price (ASP) declined by 11% YoY as Teslas's
+          product mix continued to shift from
+          Model S and Model X to the more affordable Model 3 and Model Y.
         </div>
         <div id="myDiv2" class="container content"></div>
         <div class="alert alert-primary" role="alert">
-          Graph interpretation:
+          Quarter-end cash and cash equivalents increased to $19.4B in Q4, driven mainly by Tesla's recent capital raise
+          of
+          $5.0B (average price of this offering was ~$632/share) and free cash flow of $1.9B, partially offset by early
+          debt repayments (early
+          conversion of convertible notes).
         </div>
         <div id="myDiv3" class="container content"></div>
         <div class="alert alert-primary" role="alert">
-          Graph interpretation:
-        </div>
-        <div id="myDiv4" class="container content"></div>
-        <div class="alert alert-primary" role="alert">
-          Graph interpretation:
-        </div>
-        <div id="myDiv5" class="container content"></div>
-        <div class="alert alert-primary" role="alert">
-          Graph interpretation:
+          GAAP gross profit of $4.1B remained essentially flat in 2019 compared to 2018. Volume growth and successful
+          cost reduction
+          efforts were offset by normalization of ASP, mix shift towards Model 3 and a higher lease mix.<br>
+          Sequentially, GAAP gross margin remained relatively flat in Q4 compared to Q3, while we ramped Model 3
+          production at
+          Gigafactory Shanghai. <br>While we saw an increase in operating expenses in Q4 (driven mostly by $72M of
+          non-cash
+          SBC expense
+          related to one more 2018 CEO award operational milestone becoming probable), higher gross profit resulted in a
+          72bp sequential
+          improvement of GAAP operating margin to 4.9% in Q4.
+
         </div>
         <div id="myDiv6" class="container content"></div>
         <div class="alert alert-primary" role="alert">
-          Graph interpretation:
+          On one hand we can notice that the operating margin and the adjusted ebitda have the same behavior. Both of
+          them have started growing since 2017 and never stopped.
+          On the other hand, the automative and total GAAP are moving together and tend to be almost constant
         </div>
-
 
         <h3>Sources</h3>
 
         <p>
-
-
-          #output Visualization on the link
-
+          <ul>
+            <li>Tesla's 2019 financial <a
+                href="https://github.com/wenti926/finance-tesla/blob/main/reports/O7WXQA_TSLA_Update_Letter_2019-4Q_BPWOH4.pdf">report</a>
+            </li>
+            <li>Tesla's 2020 financial <a
+                href="https://github.com/wenti926/finance-tesla/blob/main/reports/TSLA-Q4-2020-Update.pdf">report</a>
+            </li>
+            <li>Tesla's stock <a href="https://github.com/wenti926/finance-tesla/blob/main/data/TSLA1.csv">data</a></li>
+          </ul>
         </p>
       </div>
   </section>
@@ -136,28 +206,23 @@
           <p class="image is-128x128">
             <!-- replace with your profile image -->
             <img
-              src="https://raw.githubusercontent.com/mscfinance-big-data-viz/indiv-assignment-template/master/suicide_densityFR.png">
+              src="https://avatars.githubusercontent.com/u/80581514?s=400&u=1ef37db236336980021d135e691e247ed393d71c&v=4">
           </p>
         </div>
 
         <div class="media-content">
-          <p>
+          <p style="margin-left: 50px;">
             <!-- replace with your information -->
-            <strong>Wenting</strong><br>
-            <strong>Pierre</strong><br>
-            <strong>Enzo</strong><br>
-            <strong>Maureen</strong><br>
-            <strong>Victor</strong><br>
+            <strong>Wenting Zhu</strong><br>
+            <strong>Pierre Grasa</strong><br>
+            <strong>Enzo Flocan</strong><br>
+            <strong>Maureen Tueno</strong><br>
+            <strong>Victor Fotso</strong><br>
 
             <!-- find brand icons at: https://fontawesome.com/icons?d=gallery&s=brands&m=free -->
-            <a href="https://github.com/">
+            <a href="https://github.com/wenti926/finance-tesla">
               <span class="fab fa-github"></span>
               <span>Github</span>
-            </a>
-            &bullet;
-            <a href="https://www.linkedin.com/">
-              <span class="fab fa-linkedin"></span>
-              <span>LinkedIn</span>
             </a>
           </p>
 
@@ -193,6 +258,7 @@
   <script src="js/tesla5.js"></script>
   <script src="js/tesla6.js"></script>
   <script src="js/tesla7.js"></script>
+  <script src="js/tesla8.js"></script>
 </body>
 
 </html>

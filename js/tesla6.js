@@ -21,11 +21,10 @@ var data = [{
 var layout = {
     mapbox: {
         style: "outdoors",
-        zoom: 0.7
+        zoom: 1
     },
     showlegend: false,
-    height: 500,
-    width: 700
+    title: "Tesla's 6 Gigafactories"
 };
 
 var config = {

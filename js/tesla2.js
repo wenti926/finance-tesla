@@ -23,7 +23,7 @@ var trace2 = {
 var data = [trace1, trace2];
 
 var layout = {
-  title: 'Financial Revrnus',
+  title: 'Financial Revenues',
   xaxis: {
     tickangle: -45
   },
