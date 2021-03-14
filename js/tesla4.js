@@ -1,11 +1,10 @@
-var xSavings = [12.5,14.5,18.9,18.8,20.6,21,23.5,19.2
-];
+var xSavings = [12.5, 14.5, 18.9, 18.8, 20.6, 21, 23.5, 19.2];
 
-var xNetworth = [2198,4955,5338,6268,8080,8615,14531,19384];
+var xNetworth = [2198, 4955, 5338, 6268, 8080, 8615, 14531, 19384];
 
-var ySavings = ['Q1-2019','Q2-2019','Q3-2019','Q4-2019', 'Q1-2020', 'Q2-2020', 'Q3-2020', 'Q4-2020'];
+var ySavings = ['Q1-2019', 'Q2-2019', 'Q3-2019', 'Q4-2019', 'Q1-2020', 'Q2-2020', 'Q3-2020', 'Q4-2020'];
 
-var yNetworth = ['Q1-2019','Q2-2019','Q3-2019','Q4-2019', 'Q1-2020', 'Q2-2020', 'Q3-2020', 'Q4-2020'];
+var yNetworth = ['Q1-2019', 'Q2-2019', 'Q3-2019', 'Q4-2019', 'Q1-2020', 'Q2-2020', 'Q3-2020', 'Q4-2020'];
 
 var trace1 = {
   x: xSavings,
@@ -75,29 +74,27 @@ var layout = {
   height: 600,
   paper_bgcolor: 'rgb(248,248,255)',
   plot_bgcolor: 'rgb(248,248,255)',
-  annotations: [
-    {
-      xref: 'paper',
-      yref: 'paper',
-      x: -0.2,
-      y: -0.109,
-      text:'Based on latest available24 month operating margin reported by major OEMs.',
-      showarrow: false,
-      font:{
-        family: 'Arial',
-        size: 10,
-        color: 'rgb(150,150,150)',
-       
-      }
+  annotations: [{
+    xref: 'paper',
+    yref: 'paper',
+    x: -0.2,
+    y: -0.109,
+    text: 'Based on latest available24 month operating margin reported by major OEMs.',
+    showarrow: false,
+    font: {
+      family: 'Arial',
+      size: 10,
+      color: 'rgb(150,150,150)',
+
     }
-  ]
+  }]
 };
 
-for ( var i = 0 ; i < xSavings.length ; i++ ) {
+for (var i = 0; i < xSavings.length; i++) {
   var result = {
     xref: 'x1',
     yref: 'y1',
-    x: xSavings[i]+2.3,
+    x: xSavings[i] + 2.3,
     y: ySavings[i],
     text: xSavings[i] + '%',
     font: {
@@ -105,7 +102,7 @@ for ( var i = 0 ; i < xSavings.length ; i++ ) {
       size: 12,
       color: 'rgb(50, 171, 96)'
     },
-     showarrow: false,
+    showarrow: false,
   };
   var result2 = {
     xref: 'x2',
@@ -118,7 +115,7 @@ for ( var i = 0 ; i < xSavings.length ; i++ ) {
       size: 12,
       color: 'rgb(128, 0, 128)'
     },
-     showarrow: false
+    showarrow: false
   };
   layout.annotations.push(result, result2);
 }
